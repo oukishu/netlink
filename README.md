@@ -1,7 +1,5 @@
 # netlink - netlink library for go #
 
-![Build Status](https://github.com/vishvananda/netlink/actions/workflows/main.yml/badge.svg) [![GoDoc](https://godoc.org/github.com/vishvananda/netlink?status.svg)](https://godoc.org/github.com/vishvananda/netlink)
-
 The netlink package provides a simple netlink library for go. Netlink
 is the interface a user-space program in linux uses to communicate with
 the kernel. It can be used to add and remove interfaces, set ip addresses
@@ -20,15 +18,8 @@ functionality like ipsec xfrm handling.
 
 You can use go get command:
 
-    go get github.com/vishvananda/netlink
+    go get github.com/oukishu/netlink
 
-Testing dependencies:
-
-    go get github.com/vishvananda/netns
-
-Testing (requires root):
-
-    sudo -E go test github.com/vishvananda/netlink
 
 ## Examples ##
 
@@ -39,7 +30,7 @@ package main
 
 import (
     "fmt"
-    "github.com/vishvananda/netlink"
+    "github.com/oukishu/netlink"
 )
 
 func main() {
@@ -66,7 +57,7 @@ Add a new ip address to loopback:
 package main
 
 import (
-    "github.com/vishvananda/netlink"
+    "github.com/oukishu/netlink"
 )
 
 func main() {
